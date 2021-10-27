@@ -8,17 +8,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 int main (void){
-    char yes, weapon, potion; //I moved the variables up top.
+    char yes, weapon, potion, character, quit; //I moved the variables up top.
     char name[10];
+    //Start up introduction to game
     printf("Welcome to <Insert Game Title>\n");
+    //pressing Y key to continue dialogue
     printf("Press Y to continue ");
     scanf(" %c", &yes); //This is Char, you need " %c" with a space in front.
     if (yes == 'y'){
+      //Narrator introducing the player
   printf("Greetings adventurer are you ready for your quest?\n");
   printf("Press Y to continue ");
   scanf(" %c", &yes);
   printf("\n");
     }
+    
      printf("Let us Begin Our Journey!\n");
       printf("Press Y to continue ");
   scanf(" %c", &yes);
@@ -37,6 +41,7 @@ int main (void){
   printf("B for the Sparrow Bow\n");
   printf("C for the King's Guantlet\n\n");
   //char weapon;
+  //switch statement for player to select their weaopon of choice
   scanf(" %c", &weapon);
   switch(weapon){
       case 'A':
@@ -62,6 +67,7 @@ int main (void){
   printf("B for the damage potion\n");
   printf("C for the invincible potion\n\n");
   //char potion;
+  //Another switch statement for player to select their potion of choice
   scanf(" %c", &potion);
   switch(potion){
       case 'A':
@@ -76,9 +82,15 @@ int main (void){
   }
   printf("Splendid! You are know prepare for your adventure. Now you will head through the Forest of Despair, where horrors await. Then up the Rigid Mountains. And finally make your way to the cave where Gandar's lair where you shall slay him and his army will surrender.\n\n");
   printf("This is a dangerous quest, you may not return alive but our will reward you greatly. Are you ready for the challenge?\n");
+   //Select Y key to start game
    printf("Press Y to continue ");
+
   scanf(" %c", &yes);
   printf("\n");
   printf("Then off to the forest you go!");
+  //ending dialogue
+  printf("Congradulations fellow traveler you have defeated the evil Geldar and have saved the entire kingdom of Herrold. You will be knighted as his servant and will be remembered by the townspeople as their hero.\n");
+  printf("Press q to quit game\n");
+  scanf(" %c", &quit);
 return 0;
 }
