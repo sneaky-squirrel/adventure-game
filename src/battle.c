@@ -11,31 +11,31 @@ Ideas for battle monsters: answer Riddles correctly, use a pokemon battle style.
 
 */
 int heroHit = 10; //set the health value to 10;
-int monsterHit = 10; //set the health value to 10;
+int monsterHit = 5; //set the health value to 10;
 
 int ExecuteOutcome (const char decision) {  
     int heroAttack, monsterAttack, heal;
     char choice;
-    printf("This is your Current Health: %d\n", heroHit);
-    printf("Monster's Health: %d\n\n", monsterHit);
+    printf("This is your Current Health: %d HP\n", heroHit);
+    printf("Monster's Health: %d HP\n\n", monsterHit);
 
     switch (decision) { 
     case 'a' : printf("Let's Battle!\n\n");
         heroAttack = (rand() % 10) + 1; //numbers from 1 to 4. 
         monsterAttack = (rand() % 10) + 1; 
-        printf("Hero Attack is : %d\n", heroAttack); // Expand to more than one hero.   
-        printf("Monster Attack is: %d\n", monsterAttack); // If we had time, we could attack more than one monster. 
+        printf("Hero Attack is : %d Damage\n", heroAttack); // Expand to more than one hero.   
+        printf("Monster Attack is: %d Damage\n", monsterAttack); // If we had time, we could attack more than one monster. 
  
         if (heroAttack > monsterAttack) { //If we had time, we could add multiple options to attack: missils, fireballs, bows, axes, swords, etc. 
             monsterHit = monsterHit - 1;
-            printf("Attack successful, Monster took damage! Health: %d\n\n", monsterHit); //Add more damage based on the weapon. 
+            printf("Attack Successful, Monster took Damage! Health: %d HP\n\n", monsterHit); //Add more damage based on the weapon. 
             if (monsterHit <= 0) {
-                printf("You defeated the monster!!\n\n");
+                printf("You defeated the monster!!\n\n"); //If we had more time, I would find a way to exit the loop when the monster's health reaches to 0. 
             }
         } 
         else if (heroAttack < monsterAttack) { // add more than one monster if we had time. 
             heroHit = heroHit - 1;
-            printf("Attack failed, You took damage! Health: %d\n\n", heroHit);
+            printf("Attack failed, You took damage! Health: %d HP\n\n", heroHit);
         }
         else {
             printf("No damage has been inflicted!\n\n");
@@ -43,7 +43,7 @@ int ExecuteOutcome (const char decision) {
         break;
     case 'h' : printf("You healed yourself!\n\n");  //add healing potions based on their strengths
         heroHit = heroHit + 15;
-        printf("This is your Current Health: %d\n\n", heroHit);
+        printf("This is your Current Health: %d HP\n\n", heroHit);
         heroHit++;
         break;
     case 'r' : printf("You ran away from the monster safely!\n\n");
