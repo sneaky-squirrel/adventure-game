@@ -83,7 +83,7 @@ int main (void){
   printf("Splendid! You are know prepare for your adventure. Now you will head through the Forest of Despair, where horrors await. Then up the Rigid Mountains. And finally make your way to the cave where Gandar's lair where you shall slay him and his army will surrender.\n\n");
   printf("This is a dangerous quest, you may not return alive but our will reward you greatly. Are you ready for the challenge?\n");
    //Select Y key to start game
-   printf("Press Y to continue ");
+   printf("Press Y to continue\n ");
 
   scanf(" %c", &yes);
   printf("\n");
