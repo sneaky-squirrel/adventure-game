@@ -7,9 +7,13 @@
 Input.c Options for Character in 
 battle: (Attack, Heal, Run Away)
 
-Ideas for battle monsters: answer Riddles correctly, use a pokemon battle style.  
+Ideas for battle monsters: answer Riddles correctly, use a pokemon battle style. 
+If we had more time:
+-Maybe find a way to increase the difficulty of the battle and/or a boss battle simulation
+-Weapon's effectiveness towards the type of monster (Ex: Goblins are weak to fire, Cyclops are weak to Lightning). 
 
 */
+
 int heroHit = 10; //set the health value to 10;
 int monsterHit = 5; //set the health value to 10;
 
