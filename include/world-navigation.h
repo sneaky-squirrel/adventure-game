@@ -1,8 +1,20 @@
-#ifndef WORLD-NAVIGATION_H
-#define WORLD-NAVIGATION_H
+#ifndef WORLD_NAVIGATION_H
+#define WORLD_NAVIGATION_H
 
-extern const int MAX_SIZE_X;
-extern const int MAX_SIZE_Y;
+namespace world
+{
+	typedef enum
+	{
+		INVALID,
+		NORTH,
+		SOUTH,
+		WEST,
+		EAST
+	} Direction;
+}
+
+#define MAX_SIZE_X 1024
+#define MAX_SIZE_Y 1024
 
 typedef struct
 {
@@ -15,8 +27,12 @@ typedef struct
 	;
 } Location;
 
-Point current_player_position;
+int MoveCharacter( const world::Direction dir );
 
-Location game_world[ MAX_SIZE_X, MAX_SIZE_Y ];
+void PrintEdgeOfWorld();
+
+extern Point current_player_position;
+
+extern Location game_world[ MAX_SIZE_X ][ MAX_SIZE_Y ];
 
 #endif
