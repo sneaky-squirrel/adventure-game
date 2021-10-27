@@ -89,7 +89,7 @@ int main (void){
   printf("\n");
   printf("Then off to the forest you go!");
   //ending dialogue
-  printf("Congradulations fellow traveler you have defeated the evil Geldar and have saved the entire kingdom of Herrold. You will be knighted as his servant and will be remembered by the townspeople as their hero.\n");
+  printf("Congratulations fellow traveler you have defeated the evil Geldar and have saved the entire kingdom of Herrold. You will be knighted as his servant and will be remembered by the townspeople as their hero.\n");
   printf("Press q to quit game\n");
   scanf(" %c", &quit);
 return 0;
