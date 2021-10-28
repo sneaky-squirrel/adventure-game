@@ -18,19 +18,19 @@ void printPlayerPosition()
 void demoNavigation1()
 {
 	SetPlayerPosition( 50, 50 );
-	MoveCharacter( world::NORTH );
+	MoveCharacter( world_NORTH );
 	printPlayerPosition();
 	assert( current_player_position.y == 49 );
 	SetPlayerPosition( 50, 50 );
-	MoveCharacter( world::SOUTH );
+	MoveCharacter( world_SOUTH );
 	printPlayerPosition();
 	assert( current_player_position.y == 51 );
 	SetPlayerPosition( 50, 50 );
-	MoveCharacter( world::WEST );
+	MoveCharacter( world_WEST );
 	printPlayerPosition();
 	assert( current_player_position.x == 49 );
 	SetPlayerPosition( 50, 50 );
-	MoveCharacter( world::EAST );
+	MoveCharacter( world_EAST );
 	printPlayerPosition();
 	assert( current_player_position.x == 51 );
 }
@@ -38,19 +38,19 @@ void demoNavigation1()
 void demoNavigation2()
 {
 	SetPlayerPosition( 1024, 1024 );
-	MoveCharacter( world::NORTH );
+	MoveCharacter( world_NORTH );
 	printPlayerPosition();
 	assert( current_player_position.y == 1023 );
 	SetPlayerPosition( 1024, 1024 );
-	MoveCharacter( world::SOUTH );
+	MoveCharacter( world_SOUTH );
 	printPlayerPosition();
 	assert( current_player_position.y == 1024 );
 	SetPlayerPosition( 1024, 1024 );
-	MoveCharacter( world::WEST );
+	MoveCharacter( world_WEST );
 	printPlayerPosition();
 	assert( current_player_position.x == 1023 );
 	SetPlayerPosition( 1024, 1024 );
-	MoveCharacter( world::EAST );
+	MoveCharacter( world_EAST );
 	printPlayerPosition();
 	assert( current_player_position.x == 1024 );
 }
@@ -58,19 +58,19 @@ void demoNavigation2()
 void demoNavigation3()
 {
 	SetPlayerPosition( 0, 0 );
-	MoveCharacter( world::NORTH );
+	MoveCharacter( world_NORTH );
 	printPlayerPosition();
 	assert( current_player_position.y == 0 );
 	SetPlayerPosition( 0, 0 );
-	MoveCharacter( world::SOUTH );
+	MoveCharacter( world_SOUTH );
 	printPlayerPosition();
 	assert( current_player_position.y == 1 );
 	SetPlayerPosition( 0, 0 );
-	MoveCharacter( world::WEST );
+	MoveCharacter( world_WEST );
 	printPlayerPosition();
 	assert( current_player_position.x == 0 );
 	SetPlayerPosition( 0, 0 );
-	MoveCharacter( world::EAST );
+	MoveCharacter( world_EAST );
 	printPlayerPosition();
 	assert( current_player_position.x == 1 );
 }
