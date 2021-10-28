@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void startGame(){
 printf("Welcome, select your Character\n");
 }
