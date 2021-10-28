@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "world-navigation.h"
+#include "../include/world-navigation.h"
 
 void SetPlayerPosition( const int x, const int y )
 {
