@@ -1,12 +1,13 @@
 #include <stdio.h>
 int health = 10;
-char weapons;
+char weapons[];
 
 
 void Wizard(){
 
 printf("You have selected the Wizard.\n");
 printf("Your health is %dHP\n", health);
+
 }
 
 void Elf(){
