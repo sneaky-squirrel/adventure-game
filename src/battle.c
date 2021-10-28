@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+//#include "world-navigation.h"
+
 /*
 Input.c Options for Character in 
 battle: (Attack, Heal, Run Away)
@@ -17,33 +19,41 @@ If we had more time:
 int heroHit = 10; //set the health value to 10;
 int monsterHit = 5; //set the health value to 10;
 
-int ExecuteOutcome (const char decision) {  
+int gold = 1; //set gold to 5.   
+
+int ExecuteOutcome (const char decision) {  //in the future, I want to add other choices: capture a monster,   
     int heroAttack, monsterAttack, heal;
     char choice;
     printf("This is your Current Health: %d HP\n", heroHit);
-    printf("Monster's Health: %d HP\n\n", monsterHit);
+    printf("Monster's Health: %d HP\n", monsterHit);
+    printf("Gold: %d\n\n", gold);
 
     switch (decision) { 
     case 'a' : printf("Let's Battle!\n\n");
         heroAttack = (rand() % 10) + 1; //numbers from 1 to 4. 
         monsterAttack = (rand() % 10) + 1; 
         printf("Hero Attack is : %d Damage\n", heroAttack); // Expand to more than one hero.   
-        printf("Monster Attack is: %d Damage\n", monsterAttack); // If we had time, we could attack more than one monster. 
+        printf("Monster Attack is: %d Damage\n\n", monsterAttack); // If we had time, we could attack more than one monster. 
  
         if (heroAttack > monsterAttack) { //If we had time, we could add multiple options to attack: missils, fireballs, bows, axes, swords, etc. 
             monsterHit = monsterHit - 1;
-            printf("Attack Successful, Monster took Damage! Health: %d HP\n\n", monsterHit); //Add more damage based on the weapon. 
+            gold = gold + 5;
+            gold ++;
+            printf("Attack Successful, Monster took Damage! Monster's Health: %d HP\n", monsterHit); //Add more damage based on the weapon.
+            printf("You have earned 5 gold.\n\n");
             if (monsterHit <= 0) {
                 printf("You defeated the monster!!\n\n"); //If we had more time, I would find a way to exit the loop when the monster's health reaches to 0. 
             }
         } 
         else if (heroAttack < monsterAttack) { // add more than one monster if we had time. 
             heroHit = heroHit - 1;
+            gold = gold + 1;
             printf("Attack failed, You took damage! Health: %d HP\n\n", heroHit);
+            printf("You have earned 1 gold.\n\n");
         }
         else {
-            printf("No damage has been inflicted!\n\n");
-        }
+            printf("No damage has been inflicted!\n");
+        } 
         break;
     case 'h' : printf("You healed yourself!\n\n");  //add healing potions based on their strengths
         heroHit = heroHit + 15;

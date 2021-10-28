@@ -42,7 +42,8 @@ void demoNavigation2()
 	printPlayerPosition();
 	assert( current_player_position.y == 1023 );
 	SetPlayerPosition( 1024, 1024 );
-	MoveCharacter( world::SOUTH );
+	MoveCharacter( world:
+	:SOUTH );
 	printPlayerPosition();
 	assert( current_player_position.y == 1024 );
 	SetPlayerPosition( 1024, 1024 );

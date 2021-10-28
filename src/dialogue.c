@@ -8,31 +8,31 @@
 #include <stdlib.h>
 #include <stdio.h>
 int main (void){
-    char yes, weapon, potion, character, quit; //I moved the variables up top.
-    char name[10];
-    //Start up introduction to game
-    printf("Welcome to <Insert Game Title>\n");
-    //pressing Y key to continue dialogue
+  char yes, weapon, potion, character, quit; //I moved the variables up top.
+  char name[10];
+  //Start up introduction to game
+  printf("Welcome to Guardians of Herrold\n");
+  //pressing Y key to continue dialogue
+  printf("Press Y to continue ");
+  scanf(" %c", &yes); //This is Char, you need " %c" with a space in front.
+  if (yes == 'y'){
+    //Narrator introducing the player
+    printf("Greetings adventurer are you ready for your quest?\n");
     printf("Press Y to continue ");
-    scanf(" %c", &yes); //This is Char, you need " %c" with a space in front.
-    if (yes == 'y'){
-      //Narrator introducing the player
-  printf("Greetings adventurer are you ready for your quest?\n");
+    scanf(" %c", &yes);
+    printf("\n");
+  }
+    
+  printf("Let us Begin Our Journey!\n");
   printf("Press Y to continue ");
   scanf(" %c", &yes);
   printf("\n");
-    }
-    
-     printf("Let us Begin Our Journey!\n");
-      printf("Press Y to continue ");
-  scanf(" %c", &yes);
-  printf("\n");
-  printf("Hello traveler I am Berholdt the Warrior I am a well known hermit of the great Herrold Kingdom, I specialize in weaponary and elixirs. I was told by King Herrold that you come to visit me on helping you on your quest. Would you please give me your title?\n");
+  printf("Hello traveler I am Berholdt the Warrior. I am a well known hermit of the great Herrold Kingdom, I specialize in weaponary and elixirs. I was told by King Herrold that you come to visit me on helping you on your quest. Would you please give me your title?\n");
   printf("Please enter your traveler name: ");
   scanf("%s", name);
    printf("\n");
    printf("Greetings %s. It is a pleasure to meet you. As you are aware the King Herrold informed us their is a threat among our village. The evil goblin king Gandar has made an army of orcs to prepare to invade our great kingdom. He is slowly getting ready to fight so we must act quickly. You will face the wittiest of enemies so you must prepare. Luckily I have the tools you need to fight. Are you ready to make you weapon selection?\n", name);
-    printf("Press Y to continue ");
+  printf("Press Y to continue ");
   scanf(" %c", &yes);
   printf("\n");
   printf("Splendid! Let us begin with your weopon. Your first choice is the Elvin sword, a great blade that provides strong damage but slow reaction time. Our second choice is the Sparrows Bow, a bow and arror equipped with fiery arrows that is minimal in damage but quick and effective. And lastly is our Kings Guantlet. These steel gloves are perfect for hand to hand combat that are both heavy in damage and quick and effective, however you will be face to face in enemy combat which means you are more vulnerable in damage. Now make your choice\n");
