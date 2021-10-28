@@ -13,7 +13,7 @@ Ideas for battle monsters: answer Riddles correctly, use a pokemon battle style.
 If we had more time:
 -Maybe find a way to increase the difficulty of the battle and/or a boss battle simulation
 -Weapon's effectiveness towards the type of monster (Ex: Goblins are weak to fire, Cyclops are weak to Lightning). 
-
+-continue with a saved file.
 */
 
 int heroHit = 10; //set the health value to 10;
@@ -22,7 +22,7 @@ int monsterHit = 5; //set the health value to 10;
 int gold = 1; //set gold to 5.   
 
 int ExecuteOutcome (const char decision) {  //in the future, I want to add other choices: capture a monster,   
-    int heroAttack, monsterAttack, heal;
+    int heroAttack, monsterAttack;
     char choice;
     printf("This is your Current Health: %d HP\n", heroHit);
     printf("Monster's Health: %d HP\n", monsterHit);
