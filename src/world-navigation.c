@@ -1,5 +1,5 @@
-#include "world-navigation.h"
-#include "stdio.h"
+#include "../include/world-navigation.h"
+#include <stdio.h>
 
 Point current_player_position = { 0, 0 };
 Location world_map[ MAX_SIZE_X ][ MAX_SIZE_Y ];

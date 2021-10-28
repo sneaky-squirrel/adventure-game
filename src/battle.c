@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../include/battle.h"
 
 //#include "world-navigation.h"
 
@@ -20,10 +21,12 @@ int heroHit = 10; //set the health value to 10;
 int monsterHit = 5; //set the health value to 10;
 
 int gold = 1; //set gold to 5.   
+int heroAttack, monsterAttack;
+char choice;
 
 int ExecuteOutcome (const char decision) {  //in the future, I want to add other choices: capture a monster,   
-    int heroAttack, monsterAttack;
-    char choice;
+    //int heroAttack, monsterAttack;
+    //char choice;
     printf("This is your Current Health: %d HP\n", heroHit);
     printf("Monster's Health: %d HP\n", monsterHit);
     printf("Gold: %d\n\n", gold);
