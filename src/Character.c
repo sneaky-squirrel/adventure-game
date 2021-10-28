@@ -1,6 +1,6 @@
 #include <stdio.h>
 int health = 10;
-char weapons[];
+char weapons[128];
 
 
 void Wizard(){
