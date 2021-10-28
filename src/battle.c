@@ -70,8 +70,9 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
         printf("You pressed an unknown option.\n\n");
     break;
     }
+    return 0;
 }
-int main (void){
+int startBattle (void){
     char choice;
     int seedVal; //we are supposed to seed once. 
     srand(seedVal);
