@@ -32,8 +32,8 @@ int main (void){
   printf("Hello traveler, I am Berholdt the Warrior. I am a well known hermit of the great Herrold Kingdom, I specialize in weaponary and elixirs. I was told by King Herrold that you come to visit me on helping you on your quest. Would you please give me your name?\n");
   printf("Please enter your traveler name: ");
   scanf("%s", name);
-   printf("\n");
-   printf("Greetings %s. It is a pleasure to meet you. As you are aware, King Herrold informed us about a threat among our village. The evil goblin king Gandar has made an army of orcs to prepare to invade our great kingdom. He is slowly getting ready to fight and we must act quickly. You will face the wittiest of enemies so you must prepare. Luckily I have the tools you need to fight. Are you ready to make you weapon selection?\n", name);
+  printf("\n");
+  printf("Greetings %s. It is a pleasure to meet you. As you are aware, King Herrold informed us about a threat among our village. The evil goblin king Gandar has made an army of orcs to prepare to invade our great kingdom. He is slowly getting ready to fight and we must act quickly. You will face the wittiest of enemies so you must prepare. Luckily I have the tools you need to fight. Are you ready to make you weapon selection?\n", name);
   printf("Press Y to continue ");
   scanf(" %c", &yes);
   printf("\n");
@@ -54,6 +54,9 @@ int main (void){
       break;
       case 'C':
       printf("You have chosen the King's Gauntlet. Let's move to potions");
+      break;
+    default:
+      printf("You pressed an unknown option\n\n");
       break;
   }
   printf("Excellent! Not that you have chosen your weapon, it is time for potions.\n");
@@ -81,11 +84,14 @@ int main (void){
       case 'C':
       printf("You have chosen the invincible potion\n");
       break;
+    default: 
+      printf("You pressed an unknown option. Try again\n");
+      break;
   }
   printf("Splendid! You are know prepare for your adventure. Now you will head through the Forest of Despair, where horrors await. Then up the Rigid Mountains. And finally make your way to the cave where Gandar's lair where you shall slay him and his army will surrender.\n\n");
   printf("This is a dangerous quest, you may not return alive but our will reward you greatly. Are you ready for the challenge?\n");
-   //Select Y key to start game
-   printf("Press Y to continue\n ");
+  //Select Y key to start game
+  printf("Press Y to continue\n ");
 
   scanf(" %c", &yes);
   printf("\n");
