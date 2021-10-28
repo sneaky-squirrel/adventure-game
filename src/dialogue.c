@@ -17,25 +17,27 @@ int main (void){
   scanf(" %c", &yes); //This is Char, you need " %c" with a space in front.
   if (yes == 'y'){
     //Narrator introducing the player
-    printf("Greetings adventurer are you ready for your quest?\n");
+    printf("Greetings adventurer! Are you ready for your quest?\n");  //If we had more time, I would add a skip dialogue function.  
     printf("Press Y to continue ");
     scanf(" %c", &yes);
     printf("\n");
+  } else {
+    printf("you have chosen to leave, return when you are prepared");
   }
     
-  printf("Let us Begin Our Journey!\n");
+  printf("Let's begin your Journey!\n");
   printf("Press Y to continue ");
   scanf(" %c", &yes);
   printf("\n");
-  printf("Hello traveler I am Berholdt the Warrior. I am a well known hermit of the great Herrold Kingdom, I specialize in weaponary and elixirs. I was told by King Herrold that you come to visit me on helping you on your quest. Would you please give me your title?\n");
+  printf("Hello traveler, I am Berholdt the Warrior. I am a well known hermit of the great Herrold Kingdom, I specialize in weaponary and elixirs. I was told by King Herrold that you come to visit me on helping you on your quest. Would you please give me your name?\n");
   printf("Please enter your traveler name: ");
   scanf("%s", name);
    printf("\n");
-   printf("Greetings %s. It is a pleasure to meet you. As you are aware the King Herrold informed us their is a threat among our village. The evil goblin king Gandar has made an army of orcs to prepare to invade our great kingdom. He is slowly getting ready to fight so we must act quickly. You will face the wittiest of enemies so you must prepare. Luckily I have the tools you need to fight. Are you ready to make you weapon selection?\n", name);
+   printf("Greetings %s. It is a pleasure to meet you. As you are aware, King Herrold informed us about a threat among our village. The evil goblin king Gandar has made an army of orcs to prepare to invade our great kingdom. He is slowly getting ready to fight and we must act quickly. You will face the wittiest of enemies so you must prepare. Luckily I have the tools you need to fight. Are you ready to make you weapon selection?\n", name);
   printf("Press Y to continue ");
   scanf(" %c", &yes);
   printf("\n");
-  printf("Splendid! Let us begin with your weopon. Your first choice is the Elvin sword, a great blade that provides strong damage but slow reaction time. Our second choice is the Sparrows Bow, a bow and arror equipped with fiery arrows that is minimal in damage but quick and effective. And lastly is our Kings Guantlet. These steel gloves are perfect for hand to hand combat that are both heavy in damage and quick and effective, however you will be face to face in enemy combat which means you are more vulnerable in damage. Now make your choice\n");
+  printf("Splendid! Let us begin with your weapon. Your first choice is the Elvin sword, a great blade that provides strong damage but slow reaction time.\n Our second choice is the Sparrows Bow, a bow equipped with fiery arrows that is minimal in damage, but quick and effective.\n Lastly, the Kings Guantlet. These steel gloves are perfect for hand to hand combat that are both heavy in damage and quick and effective.\n You will be face to face in enemy combat, meaning you are more vulnerable in damage. Now make your choice\n");
   printf("Select your Weapon\n");
   printf("A for the Elvin Sword\n");
   printf("B for the Sparrow Bow\n");
@@ -87,10 +89,10 @@ int main (void){
 
   scanf(" %c", &yes);
   printf("\n");
-  printf("Then off to the forest you go!");
+  printf("Then off to the forest you go!\n");
   //ending dialogue
-  printf("Congratulations fellow traveler you have defeated the evil Geldar and have saved the entire kingdom of Herrold. You will be knighted as his servant and will be remembered by the townspeople as their hero.\n");
-  printf("Press q to quit game\n");
-  scanf(" %c", &quit);
+  //printf("Congratulations fellow traveler, you have defeated the evil Geldar and have saved the entire kingdom of Herrold. You will be knighted as his servant and will be remembered by the townspeople as their hero.\n");
+  //printf("Press q to quit game\n");
+  //scanf(" %c", &quit);
 return 0;
 }
