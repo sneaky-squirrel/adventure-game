@@ -1,17 +1,14 @@
 #ifndef WORLD_NAVIGATION_H
 #define WORLD_NAVIGATION_H
 
-namespace world
+typedef enum
 {
-	typedef enum
-	{
-		INVALID,
-		NORTH,
-		SOUTH,
-		WEST,
-		EAST
-	} Direction;
-}
+	world_INVALID,
+	world_NORTH,
+	world_SOUTH,
+	world_WEST,
+	world_EAST
+} Direction;
 
 #define MAX_SIZE_X 1024
 #define MAX_SIZE_Y 1024
@@ -27,7 +24,7 @@ typedef struct
 	;
 } Location;
 
-int MoveCharacter( const world::Direction dir );
+int MoveCharacter( const Direction dir );
 
 void PrintEdgeOfWorld();
 

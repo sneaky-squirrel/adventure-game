@@ -4,11 +4,11 @@
 Point current_player_position = { 0, 0 };
 Location world_map[ MAX_SIZE_X ][ MAX_SIZE_Y ];
 
-int MoveCharacter( world::Direction dir )
+int MoveCharacter( Direction dir )
 {
 	switch( dir )
 	{
-		case world::NORTH:
+		case world_NORTH:
 			if( current_player_position.y <= 0 )
 			{
 				PrintEdgeOfWorld();
@@ -16,14 +16,14 @@ int MoveCharacter( world::Direction dir )
 			}
 			--current_player_position.y;
 			break;
-		case world::SOUTH:
+		case world_SOUTH:
 			if( current_player_position.y >= MAX_SIZE_Y - 1 )
 			{ PrintEdgeOfWorld();
 				return -1;
 			}
 			++current_player_position.y;
 			break;  
-		case world::WEST:
+		case world_WEST:
 			if( current_player_position.x <= 0 )
 			{
 				PrintEdgeOfWorld();
@@ -31,7 +31,7 @@ int MoveCharacter( world::Direction dir )
 			}
 			--current_player_position.x;
 			break;  
-		case world::EAST:
+		case world_EAST:
 			if( current_player_position.x >= MAX_SIZE_X - 1 )
 			{
 				PrintEdgeOfWorld();
