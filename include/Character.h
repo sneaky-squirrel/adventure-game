@@ -9,5 +9,7 @@ typedef struct {
 void Wizard();
 void Elf();
 void Knight();
+int ChooseCharacter(void);
+
 
 #endif 

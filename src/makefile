@@ -9,7 +9,7 @@ LDIR = ../lib
 
 LIBS = -lstdc++
 
-_OBJ = world-navigation.o battle.o dialogue.o
+_OBJ = world-navigation.o battle.o dialogue.o Character.o
 OBJ = $(patsubst %, $(ODIR)/%, $(_OBJ) )
 
 $(ODIR)/%.o: %.c $(IDIR)/%.h

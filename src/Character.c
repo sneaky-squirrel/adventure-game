@@ -20,7 +20,7 @@ printf("Your health is %dHP\n\n", health);
 
 
 
-int main(void) {
+int ChooseCharacter(void) {
     
  char characterSelection;
     printf("\n");
