@@ -11,8 +11,8 @@ typedef struct{
     
 } Battle;
 
-int startBattle (void);
-int ExecuteOutcome (const char decision);
+//void startBattle ();
+//int ExecuteOutcome (const char decision);
 
 
 #endif

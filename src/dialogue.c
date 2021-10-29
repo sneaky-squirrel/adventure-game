@@ -7,7 +7,11 @@
 //git checkout -b <new branch name>: avoid merge conflicts
 #include <stdlib.h>
 #include <stdio.h>
-int main (void){
+
+#include "../include/dialogue.h"
+
+//change back to main later
+int startIntro (void){
   char yes, weapon, potion, character, quit; //I moved the variables up top.
   char name[10];
   //Start up introduction to game
@@ -100,5 +104,6 @@ int main (void){
   //printf("Congratulations fellow traveler, you have defeated the evil Geldar and have saved the entire kingdom of Herrold. You will be knighted as his servant and will be remembered by the townspeople as their hero.\n");
   //printf("Press q to quit game\n");
   //scanf(" %c", &quit);
+
 return 0;
 }

@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
-#include "../include/battle.h"
+//#include "../include/battle.h"
 
 //#include "world-navigation.h"
 
@@ -72,7 +72,7 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
     }
     return 0;
 }
-int startBattle (void){
+int main (void){
     char choice;
     int seedVal; //we are supposed to seed once. 
     srand(seedVal);
