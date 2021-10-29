@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//This was our intitial thought 
 //#include "../include/battle.h"
 //#include "../include/dialogue.h"
 

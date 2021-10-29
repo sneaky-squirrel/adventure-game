@@ -46,6 +46,7 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
             printf("You have earned 5 gold.\n\n");
             if (monsterHit <= 0) {
                 printf("You defeated the monster!!\n\n"); //If we had more time, I would find a way to exit the loop when the monster's health reaches to 0. 
+
             }
         } 
         else if (heroAttack < monsterAttack) { // add more than one monster if we had time. 
@@ -63,7 +64,7 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
         printf("This is your Current Health: %d HP\n\n", heroHit);
         heroHit++;
         break;
-    case 'r' : printf("You ran away from the monster safely!\n\n");
+    case 'r' : printf("You ran away from the monster safely!\n\naGAME OVER, thank you for playing!\n\n");
         //TODO: add a function call to run away. 
         break;  
     default:
