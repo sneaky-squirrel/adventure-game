@@ -1,6 +1,6 @@
 PROGRAM = test
 IDIR = ../include
-CC = g++
+CC = gcc
 CFLAGS = -I$(IDIR)
 CPPFLAGS =
 
