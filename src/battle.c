@@ -29,7 +29,7 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
     //char choice;
     printf("This is your Current Health: %d HP\n", heroHit);
     printf("Monster's Health: %d HP\n", monsterHit);
-    printf("Gold: %d\n\n", gold);
+    printf("Gold: %d Gold\n\n", gold);
 
     switch (decision) { 
     case 'a' : printf("Let's Battle!\n\n");
@@ -45,7 +45,8 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
             printf("Attack Successful, Monster took Damage! Monster's Health: %d HP\n", monsterHit); //Add more damage based on the weapon.
             printf("You have earned 5 gold.\n\n");
             if (monsterHit <= 0) {
-                printf("You defeated the monster!!\n\n"); //If we had more time, I would find a way to exit the loop when the monster's health reaches to 0. 
+                printf("You defeated the monster!!\n"); //If we had more time, I would find a way to exit the loop when the monster's health reaches to 0.
+                printf("Battle Completed! Press 'r' to exit.\n\n");  // I was considering ending the loop after defeating the monster. 
             }
         } 
         else if (heroAttack < monsterAttack) { // add more than one monster if we had time. 
@@ -63,7 +64,7 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
         printf("This is your Current Health: %d HP\n\n", heroHit);
         heroHit++;
         break;
-    case 'r' : printf("You ran away from the monster safely!\n\n");
+    case 'r' : printf("You ran away safely!\n\n");
         //TODO: add a function call to run away. 
         break;  
     default:
