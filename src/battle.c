@@ -64,7 +64,7 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
         printf("This is your Current Health: %d HP\n\n", heroHit);
         heroHit++;
         break;
-    case 'r' : printf("You ran away from the monster safely!\n\naGAME OVER, thank you for playing!\n\n");
+    case 'r' : printf("You ran away from the monster safely!\n\n GAME OVER, thank you for playing!\n\n");
         //TODO: add a function call to run away. 
         break;  
     default:
