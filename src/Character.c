@@ -1,6 +1,8 @@
 #include <stdio.h>
 int health = 10;
 char weapons[128];
+//weapons each character should have is 
+//Wizard = Magic wand, staff, 
 
 
 void Wizard(){
