@@ -1,19 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../include/battle.h"
-#include "../include/dialogue.h"
+//#include "../include/battle.h"
+//#include "../include/dialogue.h"
 
-//void startGame(){
-//printf("Welcome, select your Character\n");
-//}
+#include "battle.h"
+#include "dialogue.h"
 
 int main( int argc, const char* argv[] )
 {
-	//startIntro();
-	//startGame();
-	//startBattle();
-	
+	StartIntro();
+	StartBattle();
 	return 0;
 }
 

@@ -6,6 +6,6 @@ typedef struct {
     char name [10];
 } dialogue;
 
-void startIntro ();
+void StartIntro( void );
 
 #endif
