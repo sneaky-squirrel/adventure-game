@@ -72,7 +72,8 @@ int ExecuteOutcome (const char decision) {  //in the future, I want to add other
     }
     return 0;
 }
-int main (void){
+
+int StartBattle (void){
     char choice;
     int seedVal; //we are supposed to seed once. 
     srand(seedVal);
@@ -90,3 +91,4 @@ int main (void){
         //use helper functions
     return 0;
 }
+
