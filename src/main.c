@@ -13,7 +13,7 @@ int main( int argc, const char* argv[] )
 	//startIntro();
 	//startGame();
 	//startBattle();
-	
+	printf("This is a test for make.\n");
 	return 0;
 }
 
