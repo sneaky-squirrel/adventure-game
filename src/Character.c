@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "../include/Character.h"
 int health = 10; // every character starts off with a max health of 10 HP.
 
@@ -20,17 +21,74 @@ printf("Your health is %dHP\n\n", health);
 
 
 
-int ChooseCharacter(void) {
+void ChooseCharacter() 
+
+{
     
  char characterSelection;
     printf("\n");
-    printf("---------------- SELECT YOUR CHARACTER! ---------------------- %c\n\n", characterSelection);
+    printf("---------------- SELECT YOUR CHARACTER! ----------------------\n\n");
     printf("A. Wizard\n");
     printf("B. Elf\n");
     printf("C. Knight\n");
+    printf("or enter R for a Random Character\n");
     scanf(" %c", &characterSelection);
 
-    if (characterSelection == 'A' || characterSelection == 'a'){ //if the user input is A or a then execute Wizard function.
+   switch( characterSelection)
+{
+	case 'W':
+    case 'w':
+		Wizard();
+		break;
+	case 'E':
+    case 'e':
+		Elf();
+		break;
+	case 'K':
+    case 'k':
+        Knight();
+		break;
+	case 'R':
+         PickRandomClass();
+    break;
+    default:
+        printf("Please only enter W, E, K, or R\n");
+        break;
+
+}
+
+}
+
+void PickRandomClass()
+{
+
+char className[ 256 ]; 
+int randomValue; // allocating memory for the interger variable that will hold a random 
+srand( 15 );
+randomValue = rand() % 3;		// 0, 1, or 2
+switch( randomValue )
+{
+	case 0:
+		Wizard();
+		break;
+	case 1:
+		Elf();
+		break;
+	case 2:
+	default:
+		Knight();
+		break;
+}
+printf("The class that has been randomly selected is %s.\n", className);
+}
+
+
+
+
+
+
+
+    /* if (characterSelection == 'A' || characterSelection == 'a'){ //if the user input is A or a then execute Wizard function.
         Wizard();
     
     } 
@@ -44,11 +102,4 @@ int ChooseCharacter(void) {
     }
     else {
         printf("Please only enter A, B or C\n");
-    }
-
-    return 0;
-}
-
-
-
-    
+    } */

@@ -9,7 +9,8 @@ typedef struct {
 void Wizard();
 void Elf();
 void Knight();
-int ChooseCharacter(void);
+void ChooseCharacter();
+void PickRandomClass();
 
 
 #endif 
