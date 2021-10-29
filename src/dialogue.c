@@ -1,17 +1,11 @@
-//Git add -A : add all files to current directory
-//git status: know if files are commited yet, if red changes are not made
-//git commit -m "update"
-//git status: colors of file should be green
-//git push origin <branch name>
-//git branch -d <branch name> : deletes branch
-//git checkout -b <new branch name>: avoid merge conflicts
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "../include/dialogue.h"
+//#include "../include/dialogue.h"
+#include "dialogue.h"
 
 //change back to main later
-int startIntro (void){
+void StartIntro( void ){
   char yes, weapon, potion, character, quit; //I moved the variables up top.
   char name[10];
   //Start up introduction to game
@@ -104,6 +98,4 @@ int startIntro (void){
   //printf("Congratulations fellow traveler, you have defeated the evil Geldar and have saved the entire kingdom of Herrold. You will be knighted as his servant and will be remembered by the townspeople as their hero.\n");
   //printf("Press q to quit game\n");
   //scanf(" %c", &quit);
-
-return 0;
 }
